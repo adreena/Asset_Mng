@@ -1,0 +1,787 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Asset_MngDataSet" targetNamespace="http://tempuri.org/Asset_MngDataSet.xsd" xmlns:mstns="http://tempuri.org/Asset_MngDataSet.xsd" xmlns="http://tempuri.org/Asset_MngDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="2" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsPropertyName="Asset_MngConnectionString" ConnectionStringObject="Data Source=KIM-PC\SQLEXPRESS;Initial Catalog=Asset_Mng;Integrated Security=True" IsAppSettingsProperty="false" Modifier="Assembly" Name="kim-pc\sqlexpress.Asset_Mng.dbo" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Asset_Mng.Properties.Settings.GlobalReference.Default.ConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Asset_MngConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Asset_MngConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Asset_Mng.Properties.Settings.GlobalReference.Default.Asset_MngConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="زیر_نوعTableAdapter" GeneratorDataComponentClassName="زیر_نوعTableAdapter" Name="زیر_نوع" UserDataComponentName="زیر_نوعTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT نام, نوع FROM dbo.زیر_نوع</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="نام" DataSetColumn="نام" />
+              <Mapping SourceColumn="نوع" DataSetColumn="نوع" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="فروشندهTableAdapter" GeneratorDataComponentClassName="فروشندهTableAdapter" Name="فروشنده" UserDataComponentName="فروشندهTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Asset_MngConnectionString (Settings)" DbObjectName="dbo.فروشنده" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT نام_شرکت, رابط, تلفن, وب_سایت, آدرس FROM dbo.فروشنده</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="نام_شرکت" DataSetColumn="نام_شرکت" />
+              <Mapping SourceColumn="رابط" DataSetColumn="رابط" />
+              <Mapping SourceColumn="تلفن" DataSetColumn="تلفن" />
+              <Mapping SourceColumn="وب_سایت" DataSetColumn="وب_سایت" />
+              <Mapping SourceColumn="آدرس" DataSetColumn="آدرس" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="نوعTableAdapter" GeneratorDataComponentClassName="نوعTableAdapter" Name="نوع" UserDataComponentName="نوعTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT نام FROM dbo.نوع</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="نام" DataSetColumn="نام" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="اتاقTableAdapter" GeneratorDataComponentClassName="اتاقTableAdapter" Name="اتاق" UserDataComponentName="اتاقTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT نام, واحد FROM dbo.اتاق</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="نام" DataSetColumn="نام" />
+              <Mapping SourceColumn="واحد" DataSetColumn="واحد" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="واحدTableAdapter" GeneratorDataComponentClassName="واحدTableAdapter" Name="واحد" UserDataComponentName="واحدTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT نام FROM dbo.واحد</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="نام" DataSetColumn="نام" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="تاریخچهTableAdapter" GeneratorDataComponentClassName="تاریخچهTableAdapter" Name="تاریخچه" UserDataComponentName="تاریخچهTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT [شناسه کالا], [شناسه کارمند], تاریخ, توضیحات, وضعیت FROM dbo.تاریخچه</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="شناسه کالا" DataSetColumn="شناسه کالا" />
+              <Mapping SourceColumn="شناسه کارمند" DataSetColumn="شناسه کارمند" />
+              <Mapping SourceColumn="تاریخ" DataSetColumn="تاریخ" />
+              <Mapping SourceColumn="توضیحات" DataSetColumn="توضیحات" />
+              <Mapping SourceColumn="وضعیت" DataSetColumn="وضعیت" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="کارمندTableAdapter" GeneratorDataComponentClassName="کارمندTableAdapter" Name="کارمند" UserDataComponentName="کارمندTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT شناسه, [نام ، نام خانوادگی], [تلفن داخلی], ایمیل, واحد, اتاق, سمت FROM dbo.کارمند</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="شناسه" DataSetColumn="شناسه" />
+              <Mapping SourceColumn="نام ، نام خانوادگی" DataSetColumn="نام ، نام خانوادگی" />
+              <Mapping SourceColumn="تلفن داخلی" DataSetColumn="تلفن داخلی" />
+              <Mapping SourceColumn="ایمیل" DataSetColumn="ایمیل" />
+              <Mapping SourceColumn="واحد" DataSetColumn="واحد" />
+              <Mapping SourceColumn="اتاق" DataSetColumn="اتاق" />
+              <Mapping SourceColumn="سمت" DataSetColumn="سمت" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="کالاTableAdapter" GeneratorDataComponentClassName="کالاTableAdapter" Name="کالا" UserDataComponentName="کالاTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT شناسه, تاریخ_خرید, اتمام_گارانتی, مالکیت, مدل, زیرنوع, فروشنده, وضعیت FROM dbo.کالا</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="شناسه" DataSetColumn="شناسه" />
+              <Mapping SourceColumn="تاریخ_خرید" DataSetColumn="تاریخ_خرید" />
+              <Mapping SourceColumn="اتمام_گارانتی" DataSetColumn="اتمام_گارانتی" />
+              <Mapping SourceColumn="مالکیت" DataSetColumn="مالکیت" />
+              <Mapping SourceColumn="مدل" DataSetColumn="مدل" />
+              <Mapping SourceColumn="زیرنوع" DataSetColumn="زیرنوع" />
+              <Mapping SourceColumn="فروشنده" DataSetColumn="فروشنده" />
+              <Mapping SourceColumn="وضعیت" DataSetColumn="وضعیت" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DCT_AssetTableAdapter" GeneratorDataComponentClassName="DCT_AssetTableAdapter" Name="DCT_Asset" UserDataComponentName="DCT_AssetTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT RoomNo, CDate, CTime, AssetNo FROM dbo.DCT_Asset</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="RoomNo" DataSetColumn="RoomNo" />
+              <Mapping SourceColumn="CDate" DataSetColumn="CDate" />
+              <Mapping SourceColumn="CTime" DataSetColumn="CTime" />
+              <Mapping SourceColumn="AssetNo" DataSetColumn="AssetNo" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="V1TableAdapter" GeneratorDataComponentClassName="V1TableAdapter" Name="V1" UserDataComponentName="V1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT شناسه, تاریخ_خرید, اتمام_گارانتی, مالکیت, مدل, نوع, زیرنوع, واحد, وضعیت, نام_شرکت, رابط FROM dbo.V1</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="شناسه" DataSetColumn="شناسه" />
+              <Mapping SourceColumn="تاریخ_خرید" DataSetColumn="تاریخ_خرید" />
+              <Mapping SourceColumn="اتمام_گارانتی" DataSetColumn="اتمام_گارانتی" />
+              <Mapping SourceColumn="مالکیت" DataSetColumn="مالکیت" />
+              <Mapping SourceColumn="مدل" DataSetColumn="مدل" />
+              <Mapping SourceColumn="نوع" DataSetColumn="نوع" />
+              <Mapping SourceColumn="زیرنوع" DataSetColumn="زیرنوع" />
+              <Mapping SourceColumn="واحد" DataSetColumn="واحد" />
+              <Mapping SourceColumn="وضعیت" DataSetColumn="وضعیت" />
+              <Mapping SourceColumn="نام_شرکت" DataSetColumn="نام_شرکت" />
+              <Mapping SourceColumn="رابط" DataSetColumn="رابط" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="V2TableAdapter" GeneratorDataComponentClassName="V2TableAdapter" Name="V2" UserDataComponentName="V2TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        شناسه, تاریخ_خرید, اتمام_گارانتی, مالکیت, مدل, وضعیت, نام_شرکت, رابط, تلفن, وب_سایت, آدرس, [نام ، نام خانوادگی], کارمند, [تلفن داخلی], ایمیل, سمت, اتاق, واحد, نوع, 
+                         نام
+FROM            V2</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="شناسه" DataSetColumn="شناسه" />
+              <Mapping SourceColumn="تاریخ_خرید" DataSetColumn="تاریخ_خرید" />
+              <Mapping SourceColumn="اتمام_گارانتی" DataSetColumn="اتمام_گارانتی" />
+              <Mapping SourceColumn="مالکیت" DataSetColumn="مالکیت" />
+              <Mapping SourceColumn="مدل" DataSetColumn="مدل" />
+              <Mapping SourceColumn="وضعیت" DataSetColumn="وضعیت" />
+              <Mapping SourceColumn="نام_شرکت" DataSetColumn="نام_شرکت" />
+              <Mapping SourceColumn="رابط" DataSetColumn="رابط" />
+              <Mapping SourceColumn="تلفن" DataSetColumn="تلفن" />
+              <Mapping SourceColumn="وب_سایت" DataSetColumn="وب_سایت" />
+              <Mapping SourceColumn="آدرس" DataSetColumn="آدرس" />
+              <Mapping SourceColumn="نام ، نام خانوادگی" DataSetColumn="نام ، نام خانوادگی" />
+              <Mapping SourceColumn="کارمند" DataSetColumn="کارمند" />
+              <Mapping SourceColumn="تلفن داخلی" DataSetColumn="تلفن داخلی" />
+              <Mapping SourceColumn="ایمیل" DataSetColumn="ایمیل" />
+              <Mapping SourceColumn="سمت" DataSetColumn="سمت" />
+              <Mapping SourceColumn="اتاق" DataSetColumn="اتاق" />
+              <Mapping SourceColumn="واحد" DataSetColumn="واحد" />
+              <Mapping SourceColumn="نوع" DataSetColumn="نوع" />
+              <Mapping SourceColumn="نام" DataSetColumn="نام" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Asset_MngDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="Asset_MngDataSet" msprop:Generator_UserDSName="Asset_MngDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="زیر_نوع" msprop:Generator_UserTableName="زیر_نوع" msprop:Generator_RowEvArgName="زیر_نوعRowChangeEvent" msprop:Generator_TableVarName="tableزیر_نوع" msprop:Generator_TablePropName="زیر_نوع" msprop:Generator_RowDeletingName="زیر_نوعRowDeleting" msprop:Generator_RowChangingName="زیر_نوعRowChanging" msprop:Generator_RowDeletedName="زیر_نوعRowDeleted" msprop:Generator_RowEvHandlerName="زیر_نوعRowChangeEventHandler" msprop:Generator_TableClassName="زیر_نوعDataTable" msprop:Generator_RowChangedName="زیر_نوعRowChanged" msprop:Generator_RowClassName="زیر_نوعRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="نام" msprop:Generator_ColumnVarNameInTable="columnنام" msprop:Generator_ColumnPropNameInRow="نام" msprop:Generator_ColumnPropNameInTable="نامColumn" msprop:Generator_UserColumnName="نام">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="نوع" msprop:Generator_ColumnVarNameInTable="columnنوع" msprop:Generator_ColumnPropNameInRow="نوع" msprop:Generator_ColumnPropNameInTable="نوعColumn" msprop:Generator_UserColumnName="نوع" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="فروشنده" msprop:Generator_UserTableName="فروشنده" msprop:Generator_RowEvArgName="فروشندهRowChangeEvent" msprop:Generator_TableVarName="tableفروشنده" msprop:Generator_TablePropName="فروشنده" msprop:Generator_RowDeletingName="فروشندهRowDeleting" msprop:Generator_RowChangingName="فروشندهRowChanging" msprop:Generator_RowDeletedName="فروشندهRowDeleted" msprop:Generator_RowEvHandlerName="فروشندهRowChangeEventHandler" msprop:Generator_TableClassName="فروشندهDataTable" msprop:Generator_RowChangedName="فروشندهRowChanged" msprop:Generator_RowClassName="فروشندهRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="نام_شرکت" msprop:Generator_ColumnVarNameInTable="columnنام_شرکت" msprop:Generator_ColumnPropNameInRow="نام_شرکت" msprop:Generator_ColumnPropNameInTable="نام_شرکتColumn" msprop:Generator_UserColumnName="نام_شرکت">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="رابط" msprop:Generator_ColumnVarNameInTable="columnرابط" msprop:Generator_ColumnPropNameInRow="رابط" msprop:Generator_ColumnPropNameInTable="رابطColumn" msprop:Generator_UserColumnName="رابط" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="تلفن" msprop:Generator_ColumnVarNameInTable="columnتلفن" msprop:Generator_ColumnPropNameInRow="تلفن" msprop:Generator_ColumnPropNameInTable="تلفنColumn" msprop:Generator_UserColumnName="تلفن" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="وب_سایت" msprop:Generator_ColumnVarNameInTable="columnوب_سایت" msprop:Generator_ColumnPropNameInRow="وب_سایت" msprop:Generator_ColumnPropNameInTable="وب_سایتColumn" msprop:Generator_UserColumnName="وب_سایت" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="آدرس" msprop:Generator_ColumnVarNameInTable="columnآدرس" msprop:Generator_ColumnPropNameInRow="آدرس" msprop:Generator_ColumnPropNameInTable="آدرسColumn" msprop:Generator_UserColumnName="آدرس" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="نوع" msprop:Generator_UserTableName="نوع" msprop:Generator_RowEvArgName="نوعRowChangeEvent" msprop:Generator_TableVarName="tableنوع" msprop:Generator_TablePropName="نوع" msprop:Generator_RowDeletingName="نوعRowDeleting" msprop:Generator_RowChangingName="نوعRowChanging" msprop:Generator_RowDeletedName="نوعRowDeleted" msprop:Generator_RowEvHandlerName="نوعRowChangeEventHandler" msprop:Generator_TableClassName="نوعDataTable" msprop:Generator_RowChangedName="نوعRowChanged" msprop:Generator_RowClassName="نوعRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="نام" msprop:Generator_ColumnVarNameInTable="columnنام" msprop:Generator_ColumnPropNameInRow="نام" msprop:Generator_ColumnPropNameInTable="نامColumn" msprop:Generator_UserColumnName="نام">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="اتاق" msprop:Generator_UserTableName="اتاق" msprop:Generator_RowEvArgName="اتاقRowChangeEvent" msprop:Generator_TableVarName="tableاتاق" msprop:Generator_TablePropName="اتاق" msprop:Generator_RowDeletingName="اتاقRowDeleting" msprop:Generator_RowChangingName="اتاقRowChanging" msprop:Generator_RowDeletedName="اتاقRowDeleted" msprop:Generator_RowEvHandlerName="اتاقRowChangeEventHandler" msprop:Generator_TableClassName="اتاقDataTable" msprop:Generator_RowChangedName="اتاقRowChanged" msprop:Generator_RowClassName="اتاقRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="نام" msprop:Generator_ColumnVarNameInTable="columnنام" msprop:Generator_ColumnPropNameInRow="نام" msprop:Generator_ColumnPropNameInTable="نامColumn" msprop:Generator_UserColumnName="نام">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="واحد" msprop:Generator_ColumnVarNameInTable="columnواحد" msprop:Generator_ColumnPropNameInRow="واحد" msprop:Generator_ColumnPropNameInTable="واحدColumn" msprop:Generator_UserColumnName="واحد">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="واحد" msprop:Generator_UserTableName="واحد" msprop:Generator_RowEvArgName="واحدRowChangeEvent" msprop:Generator_TableVarName="tableواحد" msprop:Generator_TablePropName="واحد" msprop:Generator_RowDeletingName="واحدRowDeleting" msprop:Generator_RowChangingName="واحدRowChanging" msprop:Generator_RowDeletedName="واحدRowDeleted" msprop:Generator_RowEvHandlerName="واحدRowChangeEventHandler" msprop:Generator_TableClassName="واحدDataTable" msprop:Generator_RowChangedName="واحدRowChanged" msprop:Generator_RowClassName="واحدRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="نام" msprop:Generator_ColumnVarNameInTable="columnنام" msprop:Generator_ColumnPropNameInRow="نام" msprop:Generator_ColumnPropNameInTable="نامColumn" msprop:Generator_UserColumnName="نام">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="تاریخچه" msprop:Generator_UserTableName="تاریخچه" msprop:Generator_RowEvArgName="تاریخچهRowChangeEvent" msprop:Generator_TableVarName="tableتاریخچه" msprop:Generator_TablePropName="تاریخچه" msprop:Generator_RowDeletingName="تاریخچهRowDeleting" msprop:Generator_RowChangingName="تاریخچهRowChanging" msprop:Generator_RowDeletedName="تاریخچهRowDeleted" msprop:Generator_RowEvHandlerName="تاریخچهRowChangeEventHandler" msprop:Generator_TableClassName="تاریخچهDataTable" msprop:Generator_RowChangedName="تاریخچهRowChanged" msprop:Generator_RowClassName="تاریخچهRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="شناسه_x0020_کالا" msprop:Generator_ColumnVarNameInTable="columnشناسه_کالا" msprop:Generator_ColumnPropNameInRow="شناسه_کالا" msprop:Generator_ColumnPropNameInTable="شناسه_کالاColumn" msprop:Generator_UserColumnName="شناسه کالا">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="شناسه_x0020_کارمند" msprop:Generator_ColumnVarNameInTable="columnشناسه_کارمند" msprop:Generator_ColumnPropNameInRow="شناسه_کارمند" msprop:Generator_ColumnPropNameInTable="شناسه_کارمندColumn" msprop:Generator_UserColumnName="شناسه کارمند" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="تاریخ" msprop:Generator_ColumnVarNameInTable="columnتاریخ" msprop:Generator_ColumnPropNameInRow="تاریخ" msprop:Generator_ColumnPropNameInTable="تاریخColumn" msprop:Generator_UserColumnName="تاریخ" type="xs:dateTime" />
+              <xs:element name="توضیحات" msprop:Generator_ColumnVarNameInTable="columnتوضیحات" msprop:Generator_ColumnPropNameInRow="توضیحات" msprop:Generator_ColumnPropNameInTable="توضیحاتColumn" msprop:Generator_UserColumnName="توضیحات" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="وضعیت" msprop:Generator_ColumnVarNameInTable="columnوضعیت" msprop:Generator_ColumnPropNameInRow="وضعیت" msprop:Generator_ColumnPropNameInTable="وضعیتColumn" msprop:Generator_UserColumnName="وضعیت" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="کارمند" msprop:Generator_UserTableName="کارمند" msprop:Generator_RowEvArgName="کارمندRowChangeEvent" msprop:Generator_TableVarName="tableکارمند" msprop:Generator_TablePropName="کارمند" msprop:Generator_RowDeletingName="کارمندRowDeleting" msprop:Generator_RowChangingName="کارمندRowChanging" msprop:Generator_RowDeletedName="کارمندRowDeleted" msprop:Generator_RowEvHandlerName="کارمندRowChangeEventHandler" msprop:Generator_TableClassName="کارمندDataTable" msprop:Generator_RowChangedName="کارمندRowChanged" msprop:Generator_RowClassName="کارمندRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="شناسه" msprop:Generator_ColumnVarNameInTable="columnشناسه" msprop:Generator_ColumnPropNameInRow="شناسه" msprop:Generator_ColumnPropNameInTable="شناسهColumn" msprop:Generator_UserColumnName="شناسه">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="نام_x0020__x060C__x0020_نام_x0020_خانوادگی" msprop:Generator_ColumnVarNameInTable="_columnنام___نام_خانوادگی" msprop:Generator_ColumnPropNameInRow="_نام___نام_خانوادگی" msprop:Generator_ColumnPropNameInTable="_نام___نام_خانوادگیColumn" msprop:Generator_UserColumnName="نام ، نام خانوادگی" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="تلفن_x0020_داخلی" msprop:Generator_ColumnVarNameInTable="columnتلفن_داخلی" msprop:Generator_ColumnPropNameInRow="تلفن_داخلی" msprop:Generator_ColumnPropNameInTable="تلفن_داخلیColumn" msprop:Generator_UserColumnName="تلفن داخلی" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ایمیل" msprop:Generator_ColumnVarNameInTable="columnایمیل" msprop:Generator_ColumnPropNameInRow="ایمیل" msprop:Generator_ColumnPropNameInTable="ایمیلColumn" msprop:Generator_UserColumnName="ایمیل" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="واحد" msprop:Generator_ColumnVarNameInTable="columnواحد" msprop:Generator_ColumnPropNameInRow="واحد" msprop:Generator_ColumnPropNameInTable="واحدColumn" msprop:Generator_UserColumnName="واحد">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="اتاق" msprop:Generator_ColumnVarNameInTable="columnاتاق" msprop:Generator_ColumnPropNameInRow="اتاق" msprop:Generator_ColumnPropNameInTable="اتاقColumn" msprop:Generator_UserColumnName="اتاق">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="سمت" msprop:Generator_ColumnVarNameInTable="columnسمت" msprop:Generator_ColumnPropNameInRow="سمت" msprop:Generator_ColumnPropNameInTable="سمتColumn" msprop:Generator_UserColumnName="سمت" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="کالا" msprop:Generator_UserTableName="کالا" msprop:Generator_RowEvArgName="کالاRowChangeEvent" msprop:Generator_TableVarName="tableکالا" msprop:Generator_TablePropName="کالا" msprop:Generator_RowDeletingName="کالاRowDeleting" msprop:Generator_RowChangingName="کالاRowChanging" msprop:Generator_RowDeletedName="کالاRowDeleted" msprop:Generator_RowEvHandlerName="کالاRowChangeEventHandler" msprop:Generator_TableClassName="کالاDataTable" msprop:Generator_RowChangedName="کالاRowChanged" msprop:Generator_RowClassName="کالاRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="شناسه" msprop:Generator_ColumnVarNameInTable="columnشناسه" msprop:Generator_ColumnPropNameInRow="شناسه" msprop:Generator_ColumnPropNameInTable="شناسهColumn" msprop:Generator_UserColumnName="شناسه">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="تاریخ_خرید" msprop:Generator_ColumnVarNameInTable="columnتاریخ_خرید" msprop:Generator_ColumnPropNameInRow="تاریخ_خرید" msprop:Generator_ColumnPropNameInTable="تاریخ_خریدColumn" msprop:Generator_UserColumnName="تاریخ_خرید" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="اتمام_گارانتی" msprop:Generator_ColumnVarNameInTable="columnاتمام_گارانتی" msprop:Generator_ColumnPropNameInRow="اتمام_گارانتی" msprop:Generator_ColumnPropNameInTable="اتمام_گارانتیColumn" msprop:Generator_UserColumnName="اتمام_گارانتی" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="مالکیت" msprop:Generator_ColumnVarNameInTable="columnمالکیت" msprop:Generator_ColumnPropNameInRow="مالکیت" msprop:Generator_ColumnPropNameInTable="مالکیتColumn" msprop:Generator_UserColumnName="مالکیت" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="مدل" msprop:Generator_ColumnVarNameInTable="columnمدل" msprop:Generator_ColumnPropNameInRow="مدل" msprop:Generator_ColumnPropNameInTable="مدلColumn" msprop:Generator_UserColumnName="مدل" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="زیرنوع" msprop:Generator_ColumnVarNameInTable="columnزیرنوع" msprop:Generator_ColumnPropNameInRow="زیرنوع" msprop:Generator_ColumnPropNameInTable="زیرنوعColumn" msprop:Generator_UserColumnName="زیرنوع">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="فروشنده" msprop:Generator_ColumnVarNameInTable="columnفروشنده" msprop:Generator_ColumnPropNameInRow="فروشنده" msprop:Generator_ColumnPropNameInTable="فروشندهColumn" msprop:Generator_UserColumnName="فروشنده">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="وضعیت" msprop:Generator_ColumnVarNameInTable="columnوضعیت" msprop:Generator_ColumnPropNameInRow="وضعیت" msprop:Generator_ColumnPropNameInTable="وضعیتColumn" msprop:Generator_UserColumnName="وضعیت" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DCT_Asset" msprop:Generator_UserTableName="DCT_Asset" msprop:Generator_RowEvArgName="DCT_AssetRowChangeEvent" msprop:Generator_TableVarName="tableDCT_Asset" msprop:Generator_TablePropName="DCT_Asset" msprop:Generator_RowDeletingName="DCT_AssetRowDeleting" msprop:Generator_RowChangingName="DCT_AssetRowChanging" msprop:Generator_RowDeletedName="DCT_AssetRowDeleted" msprop:Generator_RowEvHandlerName="DCT_AssetRowChangeEventHandler" msprop:Generator_TableClassName="DCT_AssetDataTable" msprop:Generator_RowChangedName="DCT_AssetRowChanged" msprop:Generator_RowClassName="DCT_AssetRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RoomNo" msprop:Generator_ColumnVarNameInTable="columnRoomNo" msprop:Generator_ColumnPropNameInRow="RoomNo" msprop:Generator_ColumnPropNameInTable="RoomNoColumn" msprop:Generator_UserColumnName="RoomNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CDate" msprop:Generator_ColumnVarNameInTable="columnCDate" msprop:Generator_ColumnPropNameInRow="CDate" msprop:Generator_ColumnPropNameInTable="CDateColumn" msprop:Generator_UserColumnName="CDate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CTime" msprop:Generator_ColumnVarNameInTable="columnCTime" msprop:Generator_ColumnPropNameInRow="CTime" msprop:Generator_ColumnPropNameInTable="CTimeColumn" msprop:Generator_UserColumnName="CTime" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AssetNo" msprop:Generator_ColumnVarNameInTable="columnAssetNo" msprop:Generator_ColumnPropNameInRow="AssetNo" msprop:Generator_ColumnPropNameInTable="AssetNoColumn" msprop:Generator_UserColumnName="AssetNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="V1" msprop:Generator_TableClassName="V1DataTable" msprop:Generator_RowEvArgName="V1RowChangeEvent" msprop:Generator_TableVarName="tableV1" msprop:Generator_TablePropName="V1" msprop:Generator_RowDeletingName="V1RowDeleting" msprop:Generator_RowChangingName="V1RowChanging" msprop:Generator_RowEvHandlerName="V1RowChangeEventHandler" msprop:Generator_RowDeletedName="V1RowDeleted" msprop:Generator_RowChangedName="V1RowChanged" msprop:Generator_UserTableName="V1" msprop:Generator_RowClassName="V1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="شناسه" msprop:Generator_ColumnVarNameInTable="columnشناسه" msprop:Generator_ColumnPropNameInRow="شناسه" msprop:Generator_ColumnPropNameInTable="شناسهColumn" msprop:Generator_UserColumnName="شناسه">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="تاریخ_خرید" msprop:Generator_ColumnVarNameInTable="columnتاریخ_خرید" msprop:Generator_ColumnPropNameInRow="تاریخ_خرید" msprop:Generator_ColumnPropNameInTable="تاریخ_خریدColumn" msprop:Generator_UserColumnName="تاریخ_خرید" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="اتمام_گارانتی" msprop:Generator_ColumnVarNameInTable="columnاتمام_گارانتی" msprop:Generator_ColumnPropNameInRow="اتمام_گارانتی" msprop:Generator_ColumnPropNameInTable="اتمام_گارانتیColumn" msprop:Generator_UserColumnName="اتمام_گارانتی" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="مالکیت" msprop:Generator_ColumnVarNameInTable="columnمالکیت" msprop:Generator_ColumnPropNameInRow="مالکیت" msprop:Generator_ColumnPropNameInTable="مالکیتColumn" msprop:Generator_UserColumnName="مالکیت" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="مدل" msprop:Generator_ColumnVarNameInTable="columnمدل" msprop:Generator_ColumnPropNameInRow="مدل" msprop:Generator_ColumnPropNameInTable="مدلColumn" msprop:Generator_UserColumnName="مدل" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="نوع" msprop:Generator_ColumnVarNameInTable="columnنوع" msprop:Generator_ColumnPropNameInRow="نوع" msprop:Generator_ColumnPropNameInTable="نوعColumn" msprop:Generator_UserColumnName="نوع" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="زیرنوع" msprop:Generator_ColumnVarNameInTable="columnزیرنوع" msprop:Generator_ColumnPropNameInRow="زیرنوع" msprop:Generator_ColumnPropNameInTable="زیرنوعColumn" msprop:Generator_UserColumnName="زیرنوع">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="واحد" msprop:Generator_ColumnVarNameInTable="columnواحد" msprop:Generator_ColumnPropNameInRow="واحد" msprop:Generator_ColumnPropNameInTable="واحدColumn" msprop:Generator_UserColumnName="واحد" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="وضعیت" msprop:Generator_ColumnVarNameInTable="columnوضعیت" msprop:Generator_ColumnPropNameInRow="وضعیت" msprop:Generator_ColumnPropNameInTable="وضعیتColumn" msprop:Generator_UserColumnName="وضعیت" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="نام_شرکت" msprop:Generator_ColumnVarNameInTable="columnنام_شرکت" msprop:Generator_ColumnPropNameInRow="نام_شرکت" msprop:Generator_ColumnPropNameInTable="نام_شرکتColumn" msprop:Generator_UserColumnName="نام_شرکت" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="رابط" msprop:Generator_ColumnVarNameInTable="columnرابط" msprop:Generator_ColumnPropNameInRow="رابط" msprop:Generator_ColumnPropNameInTable="رابطColumn" msprop:Generator_UserColumnName="رابط" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="V2" msprop:Generator_TableClassName="V2DataTable" msprop:Generator_RowEvArgName="V2RowChangeEvent" msprop:Generator_TableVarName="tableV2" msprop:Generator_TablePropName="V2" msprop:Generator_RowDeletingName="V2RowDeleting" msprop:Generator_RowChangingName="V2RowChanging" msprop:Generator_RowEvHandlerName="V2RowChangeEventHandler" msprop:Generator_RowDeletedName="V2RowDeleted" msprop:Generator_RowChangedName="V2RowChanged" msprop:Generator_UserTableName="V2" msprop:Generator_RowClassName="V2Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="شناسه" msprop:Generator_ColumnVarNameInTable="columnشناسه" msprop:Generator_ColumnPropNameInRow="شناسه" msprop:Generator_ColumnPropNameInTable="شناسهColumn" msprop:Generator_UserColumnName="شناسه">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="تاریخ_خرید" msprop:Generator_ColumnVarNameInTable="columnتاریخ_خرید" msprop:Generator_ColumnPropNameInRow="تاریخ_خرید" msprop:Generator_ColumnPropNameInTable="تاریخ_خریدColumn" msprop:Generator_UserColumnName="تاریخ_خرید" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="اتمام_گارانتی" msprop:Generator_ColumnVarNameInTable="columnاتمام_گارانتی" msprop:Generator_ColumnPropNameInRow="اتمام_گارانتی" msprop:Generator_ColumnPropNameInTable="اتمام_گارانتیColumn" msprop:Generator_UserColumnName="اتمام_گارانتی" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="مالکیت" msprop:Generator_ColumnVarNameInTable="columnمالکیت" msprop:Generator_ColumnPropNameInRow="مالکیت" msprop:Generator_ColumnPropNameInTable="مالکیتColumn" msprop:Generator_UserColumnName="مالکیت" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="مدل" msprop:Generator_ColumnVarNameInTable="columnمدل" msprop:Generator_ColumnPropNameInRow="مدل" msprop:Generator_ColumnPropNameInTable="مدلColumn" msprop:Generator_UserColumnName="مدل" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="وضعیت" msprop:Generator_ColumnVarNameInTable="columnوضعیت" msprop:Generator_ColumnPropNameInRow="وضعیت" msprop:Generator_ColumnPropNameInTable="وضعیتColumn" msprop:Generator_UserColumnName="وضعیت" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="نام_شرکت" msprop:Generator_ColumnVarNameInTable="columnنام_شرکت" msprop:Generator_ColumnPropNameInRow="نام_شرکت" msprop:Generator_ColumnPropNameInTable="نام_شرکتColumn" msprop:Generator_UserColumnName="نام_شرکت" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="رابط" msprop:Generator_ColumnVarNameInTable="columnرابط" msprop:Generator_ColumnPropNameInRow="رابط" msprop:Generator_ColumnPropNameInTable="رابطColumn" msprop:Generator_UserColumnName="رابط" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="تلفن" msprop:Generator_ColumnVarNameInTable="columnتلفن" msprop:Generator_ColumnPropNameInRow="تلفن" msprop:Generator_ColumnPropNameInTable="تلفنColumn" msprop:Generator_UserColumnName="تلفن" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="وب_سایت" msprop:Generator_ColumnVarNameInTable="columnوب_سایت" msprop:Generator_ColumnPropNameInRow="وب_سایت" msprop:Generator_ColumnPropNameInTable="وب_سایتColumn" msprop:Generator_UserColumnName="وب_سایت" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="آدرس" msprop:Generator_ColumnVarNameInTable="columnآدرس" msprop:Generator_ColumnPropNameInRow="آدرس" msprop:Generator_ColumnPropNameInTable="آدرسColumn" msprop:Generator_UserColumnName="آدرس" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="نام_x0020__x060C__x0020_نام_x0020_خانوادگی" msprop:Generator_ColumnVarNameInTable="_columnنام___نام_خانوادگی" msprop:Generator_ColumnPropNameInRow="_نام___نام_خانوادگی" msprop:Generator_ColumnPropNameInTable="_نام___نام_خانوادگیColumn" msprop:Generator_UserColumnName="نام ، نام خانوادگی" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="کارمند" msprop:Generator_ColumnVarNameInTable="columnکارمند" msprop:Generator_ColumnPropNameInRow="کارمند" msprop:Generator_ColumnPropNameInTable="کارمندColumn" msprop:Generator_UserColumnName="کارمند" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="تلفن_x0020_داخلی" msprop:Generator_ColumnVarNameInTable="columnتلفن_داخلی" msprop:Generator_ColumnPropNameInRow="تلفن_داخلی" msprop:Generator_ColumnPropNameInTable="تلفن_داخلیColumn" msprop:Generator_UserColumnName="تلفن داخلی" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ایمیل" msprop:Generator_ColumnVarNameInTable="columnایمیل" msprop:Generator_ColumnPropNameInRow="ایمیل" msprop:Generator_ColumnPropNameInTable="ایمیلColumn" msprop:Generator_UserColumnName="ایمیل" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="سمت" msprop:Generator_ColumnVarNameInTable="columnسمت" msprop:Generator_ColumnPropNameInRow="سمت" msprop:Generator_ColumnPropNameInTable="سمتColumn" msprop:Generator_UserColumnName="سمت" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="اتاق" msprop:Generator_ColumnVarNameInTable="columnاتاق" msprop:Generator_ColumnPropNameInRow="اتاق" msprop:Generator_ColumnPropNameInTable="اتاقColumn" msprop:Generator_UserColumnName="اتاق" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="واحد" msprop:Generator_ColumnVarNameInTable="columnواحد" msprop:Generator_ColumnPropNameInRow="واحد" msprop:Generator_ColumnPropNameInTable="واحدColumn" msprop:Generator_UserColumnName="واحد" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="نوع" msprop:Generator_ColumnVarNameInTable="columnنوع" msprop:Generator_ColumnPropNameInRow="نوع" msprop:Generator_ColumnPropNameInTable="نوعColumn" msprop:Generator_UserColumnName="نوع" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="نام" msprop:Generator_ColumnVarNameInTable="columnنام" msprop:Generator_ColumnPropNameInRow="نام" msprop:Generator_ColumnPropNameInTable="نامColumn" msprop:Generator_UserColumnName="نام">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:زیر_نوع" />
+      <xs:field xpath="mstns:نام" />
+    </xs:unique>
+    <xs:unique name="فروشنده_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:فروشنده" />
+      <xs:field xpath="mstns:نام_شرکت" />
+    </xs:unique>
+    <xs:unique name="نوع_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:نوع" />
+      <xs:field xpath="mstns:نام" />
+    </xs:unique>
+    <xs:unique name="اتاق_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:اتاق" />
+      <xs:field xpath="mstns:نام" />
+      <xs:field xpath="mstns:واحد" />
+    </xs:unique>
+    <xs:unique name="واحد_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:واحد" />
+      <xs:field xpath="mstns:نام" />
+    </xs:unique>
+    <xs:unique name="تاریخچه_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:تاریخچه" />
+      <xs:field xpath="mstns:شناسه_x0020_کالا" />
+      <xs:field xpath="mstns:تاریخ" />
+    </xs:unique>
+    <xs:unique name="کارمند_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:کارمند" />
+      <xs:field xpath="mstns:شناسه" />
+    </xs:unique>
+    <xs:unique name="کالا_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:کالا" />
+      <xs:field xpath="mstns:شناسه" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="FK7" msdata:parent="نوع" msdata:child="زیر_نوع" msdata:parentkey="نام" msdata:childkey="نوع" msprop:Generator_UserChildTable="زیر_نوع" msprop:Generator_ChildPropName="Getزیر_نوعRows" msprop:Generator_UserRelationName="FK7" msprop:Generator_ParentPropName="نوعRow" msprop:Generator_RelationVarName="relationFK7" msprop:Generator_UserParentTable="نوع" />
+      <msdata:Relationship name="Fk8" msdata:parent="واحد" msdata:child="اتاق" msdata:parentkey="نام" msdata:childkey="واحد" msprop:Generator_UserChildTable="اتاق" msprop:Generator_ChildPropName="GetاتاقRows" msprop:Generator_UserRelationName="Fk8" msprop:Generator_ParentPropName="واحدRow" msprop:Generator_RelationVarName="relationFk8" msprop:Generator_UserParentTable="واحد" />
+      <msdata:Relationship name="Fk5" msdata:parent="کالا" msdata:child="تاریخچه" msdata:parentkey="شناسه" msdata:childkey="شناسه_x0020_کالا" msprop:Generator_UserChildTable="تاریخچه" msprop:Generator_ChildPropName="GetتاریخچهRows" msprop:Generator_UserRelationName="Fk5" msprop:Generator_ParentPropName="کالاRow" msprop:Generator_RelationVarName="relationFk5" msprop:Generator_UserParentTable="کالا" />
+      <msdata:Relationship name="Fk6" msdata:parent="کارمند" msdata:child="تاریخچه" msdata:parentkey="شناسه" msdata:childkey="شناسه_x0020_کارمند" msprop:Generator_UserChildTable="تاریخچه" msprop:Generator_ChildPropName="GetتاریخچهRows" msprop:Generator_UserRelationName="Fk6" msprop:Generator_ParentPropName="کارمندRow" msprop:Generator_RelationVarName="relationFk6" msprop:Generator_UserParentTable="کارمند" />
+      <msdata:Relationship name="FK1" msdata:parent="اتاق" msdata:child="کارمند" msdata:parentkey="نام واحد" msdata:childkey="اتاق واحد" msprop:Generator_UserChildTable="کارمند" msprop:Generator_ChildPropName="GetکارمندRows" msprop:Generator_UserRelationName="FK1" msprop:Generator_ParentPropName="اتاقRowParent" msprop:Generator_RelationVarName="relationFK1" msprop:Generator_UserParentTable="اتاق" />
+      <msdata:Relationship name="FK2" msdata:parent="زیر_نوع" msdata:child="کالا" msdata:parentkey="نام" msdata:childkey="زیرنوع" msprop:Generator_UserChildTable="کالا" msprop:Generator_ChildPropName="GetکالاRows" msprop:Generator_UserRelationName="FK2" msprop:Generator_ParentPropName="زیر_نوعRow" msprop:Generator_RelationVarName="relationFK2" msprop:Generator_UserParentTable="زیر_نوع" />
+      <msdata:Relationship name="FK3" msdata:parent="فروشنده" msdata:child="کالا" msdata:parentkey="نام_شرکت" msdata:childkey="فروشنده" msprop:Generator_UserChildTable="کالا" msprop:Generator_ChildPropName="GetکالاRows" msprop:Generator_UserRelationName="FK3" msprop:Generator_ParentPropName="فروشندهRow" msprop:Generator_RelationVarName="relationFK3" msprop:Generator_UserParentTable="فروشنده" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>
