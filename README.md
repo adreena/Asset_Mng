@@ -8,7 +8,7 @@ they are able to communicate data with RFID <strong> Reader </strong>.
 
 
 RFID technology is a useful technique in tracking and managing assets database or asset management application. 
-Assets are attached a tag, each tag contains information about that asset,
+Assets are attached a tag, each tag contains information about that asset, such as owner, purchased date, guarantee expiary date , its location and current status.
 tags are scanned with RFID reader and the data is synced through system database.
 
 
